@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+.container-fluid h2{
+    position: absolute;
+    left: 35%;
+}
+p{
+    line-height: 2em;
+    font-size: 20px;
+    padding: 10px;
+}
+h1{
+    width: 100%;
+    padding: 0px;
+    margin: 25px;
+    font-size: 40px;
+    color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.innercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+}
+.innercontainer p{
+    font-size: 26px;
+}
+#contest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 20px;
+    margin: 50px;
+    width: 30rem;
+}
+.btn{
+    width: 50%;
+}
+.card:hover{
+    background-color:antiquewhite;
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+.btn-pink{
+    background-color: rgb(179, 58, 78);
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    box-shadow: 5px 5px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-pink::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.btn-pink:hover::before {
+    transform: scaleX(1);
+}
